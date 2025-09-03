@@ -1,5 +1,7 @@
 package com.demoqa.pages.forms;
 
-public class FormsPage {
+import com.demoqa.pages.HomePage;
+
+public class FormsPage extends HomePage {
 
 }

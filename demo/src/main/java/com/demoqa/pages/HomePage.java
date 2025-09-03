@@ -1,6 +1,8 @@
 package com.demoqa.pages;
 
 import org.openqa.selenium.By;
+
+import com.demoqa.pages.forms.FormsPage;
 import com.saucedemo.pages.BasePage;
 
 public class HomePage extends BasePage {

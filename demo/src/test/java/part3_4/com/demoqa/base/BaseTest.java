@@ -1,4 +1,4 @@
-package part3_4.com.demoqa;
+package part3_4.com.demoqa.base;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
