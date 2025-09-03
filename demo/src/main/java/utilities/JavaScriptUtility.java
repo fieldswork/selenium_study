@@ -11,4 +11,11 @@ public class JavaScriptUtility extends Utility {
         String jsScript = "arguments[0].scrollIntoView();";
         ((JavascriptExecutor)driver).executeScript(jsScript, element);
     }
+
+    // Uses JavaScript to click an element, can be used instead of the Selenium method
+    public static void clickJS(By locator) {
+        WebElement element = driver.findElement(locator);
+        JavascriptExecutor executor = (JavascriptExecutor) driver;
+        executor.executeScript("arguments[0].click()", element);
+    }
 }
