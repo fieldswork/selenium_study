@@ -6,8 +6,10 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 
+import com.base.BasePage;
 import com.demoqa.pages.HomePage;
-import com.saucedemo.pages.BasePage;
+
+import static utilities.Utility.setUtilityDriver;
 
 public class BaseTest {
 
@@ -27,6 +29,7 @@ public class BaseTest {
         driver.get(DEMOQA_URL);
         basePage = new BasePage();
         basePage.setDriver(driver);
+        setUtilityDriver();
         homePage = new HomePage();
     }
 

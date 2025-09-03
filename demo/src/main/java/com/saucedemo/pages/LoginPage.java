@@ -2,6 +2,8 @@ package com.saucedemo.pages;
 
 import org.openqa.selenium.By;
 
+import com.base.BasePage;
+
 public class LoginPage extends BasePage {
     // Make sure to extend BasePage so we can access its methods!
 
