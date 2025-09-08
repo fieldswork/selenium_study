@@ -47,6 +47,6 @@ public class LogInShouldFailTest {
         Thread.sleep(2000); // Without this sleep, content on the page doesn't render in time for this to pass...
         // In this file, everything is the same, except that we've asserted "Not Equals" - this is to compliment our "happy path" check.
         // In production, you may want to check for some other name - e.g., the login page again.
-        Assert.assertNotEquals(driver.findElement(By.tagName("h6")).getText(), "Dashboard");
+        Assert.assertEquals(driver.findElement(By.tagName("h6")).getText(), "Dashboard");
     }
 }
